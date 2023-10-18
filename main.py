@@ -89,6 +89,12 @@ def load_previous_searches():
 
     return searches
 
+def latest_dorks():
+    with open('searches.json','r') as f:
+        dorks = json.load(f)
+        return dorks[-5:]
+
+
 def interactive_menu():
     displayasci()
     display_banner()
@@ -114,16 +120,26 @@ def interactive_menu():
             dork = input("Entrez le dork à sauvegarder: ")
             save_search(dork)
             print(colored('[+]','green') +f"'{dork}' a été sauvegardé!")
-            break
+            
         elif choice == '3':
             loaded_dorks = load_previous_searches()
             print("\nDorks précédemment sauvegardés:")
             for dork in loaded_dorks:
                 print(dork)
-            break
+            
         elif choice=='4':
-            webbrowser.open(f"https://www.google.com/search?q={dork}")
-            break
+            print("Choose one of the following dork from your latest 5 generated ones: ")
+            last = latest_dorks()
+            for i in range(len(last)):
+                print(f"{i}: {last[i]}")
+            choice2 = int(input(colored("#", 'green') + " " + colored("Entrez votre choix du dork:", 'yellow', attrs=['bold']) + " "))
+            for a in range(len(last)):
+                if a==choice2:
+                    dork= last[a]['dork']
+                    print(dork)
+                    webbrowser.open(f"https://www.google.com/search?q={dork}")
+            #webbrowser.open(f"https://www.google.com/search?q={dork}")
+            
         elif choice == '5':
             break
         else:
