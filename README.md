@@ -30,3 +30,9 @@ Yassine JEMLAOUI
 
 [Twitter](https://twitter.com/KafkaYassine)
 [LinkedIn](https://www.linkedin.com/in/yassine-jemlaoui-a4bb8b202/)
+
+
+
+## Snippet
+![Description of the GIF](https://github.com/Stiegler0/Fin-Your-job-using-google-dorks/assets/145070468/fac4fdb4-1e55-4b92-80c2-c61e2a3737f8)
+
