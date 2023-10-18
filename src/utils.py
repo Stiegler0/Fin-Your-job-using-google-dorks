@@ -32,7 +32,7 @@ def save_search(dork):
     searches = []
     try:
         # Try to load existing searches from the file
-        with open('searches.json', 'r') as f:
+        with open('data/searches.json', 'r') as f:
             searches = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
         # If the file doesn't exist or it's empty/corrupt, just start with an empty list
