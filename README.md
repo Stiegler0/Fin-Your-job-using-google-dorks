@@ -17,7 +17,7 @@ Navigate to the project directory and run:
 python src/main.py
 ```
 ## Author
-Yassine JEMLAOUI:
+Yassine JEMLAOUI
 
-    [Twitter](https://twitter.com/KafkaYassine)
-    [LinkedIn](https://www.linkedin.com/in/yassine-jemlaoui-a4bb8b202/)
+[Twitter](https://twitter.com/KafkaYassine)
+[LinkedIn](https://www.linkedin.com/in/yassine-jemlaoui-a4bb8b202/)
