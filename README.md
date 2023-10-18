@@ -16,3 +16,7 @@ Navigate to the project directory and run:
 ```
 python src/main.py
 ```
+## Author
+Yassine JEMLAOUI
+    [Twitter](https://twitter.com/KafkaYassine)
+    [LinkedIn](https://www.linkedin.com/in/yassine-jemlaoui-a4bb8b202/)
