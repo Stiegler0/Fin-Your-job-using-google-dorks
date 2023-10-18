@@ -16,6 +16,15 @@ Navigate to the project directory and run:
 ```
 python src/main.py
 ```
+
+Command Line Arguments
+
+You can also generate a dork directly using command line arguments:
+
+    --url: Specify a particular URL or keyword within the URL.
+    --title: Specify a keyword for the title of the page.
+    --text: Specify any keyword text that should be present in the page content.
+    --site: Specify the target site, for example linkedin.com.
 ## Author
 Yassine JEMLAOUI
 
