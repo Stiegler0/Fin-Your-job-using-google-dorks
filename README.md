@@ -11,3 +11,8 @@ git clone https://github.com/YourUsername/dork_generator.git
 cd dork_generator
 pip install -r requirements.txt
 ```
+## Usage
+Navigate to the project directory and run:
+```
+python src/main.py
+```
