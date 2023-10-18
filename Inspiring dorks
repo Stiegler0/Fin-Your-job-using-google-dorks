@@ -1,0 +1,4 @@
+http://www.google.com/search?q=+"cybersecurity+consultant"+"Ile+de+france" -intitle:"profiles" -inurl:"dir/+"+site:fr.linkedin.com/in/+OR+site:fr.linkedin.com/pub/&as_oq=masters+mba+master+diplome+msc+magister+magisteres+maitrise
+
+"cybersecurity consultant" "Ile de france" -intitle:"profiles" -inurl:"dir/ " site:fr.linkedin.com/in/ OR site:fr.linkedin.com/pub/ masters OR mba OR master OR diplome OR msc OR magister OR magisteres OR maitrise
+
