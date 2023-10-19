@@ -24,7 +24,7 @@ def fetch_historical_data(dork):
     return f"https://web.archive.org/web/*/https://www.google.com/search?q={dork}"
 
 def latest_dorks():
-    with open('searches.json','r') as f:
+    with open('../data/searches.json','r') as f:
         dorks = json.load(f)
         return dorks[-5:]
 
@@ -32,7 +32,7 @@ def save_search(dork):
     searches = []
     try:
         # Try to load existing searches from the file
-        with open('data/searches.json', 'r') as f:
+        with open('../data/searches.json', 'r') as f:
             searches = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
         # If the file doesn't exist or it's empty/corrupt, just start with an empty list
@@ -42,11 +42,11 @@ def save_search(dork):
     searches.append({'dork': dork})
 
     # Write the updated list back to the file
-    with open('searches.json', 'w') as f:
+    with open('../data/searches.json', 'w') as f:
         json.dump(searches, f)
 
 def load_previous_searches():
-    with open('searches.json', 'r') as f:
+    with open('../data/searches.json', 'r') as f:
         searches = json.load(f)
 
     return searches
